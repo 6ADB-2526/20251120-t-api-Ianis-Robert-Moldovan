@@ -39,14 +39,20 @@ const addKid = (req,res) => {
 }
 
 // geschenk toevoegen aan lijstje van een kind
-
+const geschenkToevoegenKindje = (req,res) => {
+    res.json("het werkt niet")
+}
 
 // geschenk wissen uit lijst van een kind
-
+const geschenkVerwijderenKindje = (req,res) => {
+    res.json("het werkt niet")
+}
 
 // Exports 
 module.exports = { 
     alleKindjes,
     oneKid,
     addKid,
+    geschenkToevoegenKindje,
+    geschenkVerwijderenKindje
 }

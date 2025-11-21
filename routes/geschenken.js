@@ -8,8 +8,8 @@ const routes = express.Router();
 
 routes.get("/", ctrlGeschenk.lijstGeschenken);
 routes.get("/:ID", ctrlGeschenk.geschenkInfo);
-routes.put("/", ctrlGeschenk.geschenkToevoegen);
-routes.delete("/:ID", ctrlGeschenk.geschenkWissen);
+routes.put("/addGeschenk", ctrlGeschenk.geschenkToevoegen);
+routes.delete("/deleteGeschenk/:ID", ctrlGeschenk.geschenkWissen);
 
 // exporteer het router object
 module.exports = routes;
