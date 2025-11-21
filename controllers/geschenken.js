@@ -14,10 +14,12 @@
 const { sinterklaasGeschenken: geschenken } = require("../databank/data");
 
 const lijstGeschenken = (req, res) => {
+  
   res.json(geschenken);
 };
 
 const geschenkInfo = (req, res) => {
+  
   res.json({ status: "gelukt" });
 };
 
