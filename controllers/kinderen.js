@@ -32,8 +32,10 @@ const oneKid = (req,res) => {
 // kinderen toevoegen
 const addKid = (req,res) => {
     const id = getMaxID() + 1
-    
-    res.json()
+    const {voornaam, achternaam, geschenkId} = req.body
+    const newKid = { id, voornaam, achternaam, geschenkId}
+    kinderen.push(newKid)
+    res.json({ resultaat: "OK", leerling: newLLN })
 }
 
 // geschenk toevoegen aan lijstje van een kind
@@ -46,4 +48,5 @@ const addKid = (req,res) => {
 module.exports = { 
     alleKindjes,
     oneKid,
+    addKid,
 }
