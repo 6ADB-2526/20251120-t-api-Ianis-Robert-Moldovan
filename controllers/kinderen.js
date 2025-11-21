@@ -32,7 +32,7 @@ const oneKid = (req,res) => {
 // kinderen toevoegen
 const addKid = (req,res) => {
     const id = getMaxID() + 1
-    const { kinderen.voornaam, }
+    
     res.json()
 }
 
